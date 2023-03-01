@@ -9,7 +9,7 @@ const MealItemList = () => {
         <MealItem />
       </ul>
       <h6>Your Order has received.</h6>
-      <div className="voucher-item">
+      <div>
         <p>Your Order ID: xxxxxx</p>
         <p>Cost: xxxxxx</p>
       </div>

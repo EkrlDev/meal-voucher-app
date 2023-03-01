@@ -9,7 +9,6 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  border: 1px solid black;
 }
 
 p {
@@ -66,16 +65,14 @@ li {
 }
 
 .voucher {
-  border: 1px solid greenyellow;
+  border: 1px solid black;
   border-radius: 10%;
   margin: 5px;
-  width: 550px;
+  width: 600px;
   justify-content: center;
 }
 
 .listsContainer {
-  border: 1px solid red;
-  border-radius: 10%;
   margin: 5px;
   width: 100%;
   display: flex;
@@ -84,17 +81,16 @@ li {
 }
 
 .voucher-item {
-  border: 1px solid blue;
-  border-radius: 10%;
-  margin: 5px;
+  margin: 10px;
   width: 100%;
   display: flex;
   flex-direction: column;
+  border: 1px solid black;
+  border-radius: 5%;
+  background-color: lightgrey;
 }
 
 .mealItem {
-  border: 1px solid green;
-  border-radius: 10%;
   margin: 5px;
   width: 90%;
   display: flex;
@@ -103,6 +99,4 @@ li {
 
 .select-option {
   width: 150px;
-  border: 1px solid orange;
-  border-radius: 10%;
 }
