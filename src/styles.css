@@ -6,16 +6,27 @@ body {
   font-family: sans-serif;
   margin: 20px;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid black;
+}
+
+p {
+  margin: 5px;
+  font-size: 12px;
 }
 
 h1 {
   margin-top: 0;
   font-size: 22px;
+  text-align: center;
 }
 
 h2 {
   margin-top: 0;
   font-size: 20px;
+  text-align: center;
 }
 
 h3 {
@@ -38,10 +49,6 @@ h6 {
   font-size: 12px;
 }
 
-code {
-  font-size: 1.2em;
-}
-
 ul {
   padding-left: 20px;
 }
@@ -56,4 +63,46 @@ ul,
 li {
   margin: 0;
   padding: 0;
+}
+
+.voucher {
+  border: 1px solid greenyellow;
+  border-radius: 10%;
+  margin: 5px;
+  width: 550px;
+  justify-content: center;
+}
+
+.listsContainer {
+  border: 1px solid red;
+  border-radius: 10%;
+  margin: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.voucher-item {
+  border: 1px solid blue;
+  border-radius: 10%;
+  margin: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mealItem {
+  border: 1px solid green;
+  border-radius: 10%;
+  margin: 5px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.select-option {
+  width: 150px;
+  border: 1px solid orange;
+  border-radius: 10%;
 }
