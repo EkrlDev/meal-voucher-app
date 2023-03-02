@@ -13,7 +13,7 @@ body {
 
 p {
   margin: 5px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 h1 {
@@ -45,6 +45,7 @@ h5 {
 
 h6 {
   margin-top: 0;
+  align-self: center;
   font-size: 12px;
 }
 
@@ -53,7 +54,7 @@ ul {
 }
 
 button {
-  margin: 5px;
+  margin: 1px;
 }
 li {
   list-style-type: none;
@@ -95,6 +96,7 @@ li {
   width: 90%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .select-option {
