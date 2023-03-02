@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 
-const AddMealItem = ({ title, menu }) => {
+const AddMealItem = ({ title, menu, setFromList }) => {
   const mealItemOptionList = menu[title].map((t) => t.name);
   const mealItemOptions = mealItemOptionList.map((item) => {
     return (
@@ -10,11 +10,15 @@ const AddMealItem = ({ title, menu }) => {
       </option>
     );
   });
-
+  const onChangeHandler = (e) => {
+    setFromList(title, e.target.value);
+  };
   return (
     <div className="mealItem">
       <label>{title}</label>
-      <select className="select-option">{mealItemOptions}</select>
+      <select className="select-option" onChange={onChangeHandler}>
+        {mealItemOptions}
+      </select>
     </div>
   );
 };

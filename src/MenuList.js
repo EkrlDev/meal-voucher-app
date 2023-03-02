@@ -1,5 +1,5 @@
 export const Menu = {
-  Soups: [
+  Soup: [
     {
       id: 0,
       name: "Taco Soup",
@@ -16,7 +16,7 @@ export const Menu = {
       cost: 4.2,
     },
   ],
-  MainCourses: [
+  MainCourse: [
     {
       id: 0,
       name: "Sis Kebap",
@@ -33,7 +33,7 @@ export const Menu = {
       cost: 14.2,
     },
   ],
-  Salads: [
+  Salad: [
     {
       id: 0,
       name: "Club Salad",
@@ -50,7 +50,7 @@ export const Menu = {
       cost: 4.2,
     },
   ],
-  Desserts: [
+  Dessert: [
     {
       id: 0,
       name: "Baklava",

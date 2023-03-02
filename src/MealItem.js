@@ -1,15 +1,22 @@
 import React from "react";
 
-const MealItem = () => {
-  return (
+const MealItem = ({ title, dispatch }) => {
+  const deleteItemHandler = () => {
+    dispatch({
+      type: "delete-meal",
+      title: title,
+    });
+  };
+  const newMeal = (
     <li className="mealItem">
-      <p>Meal1</p>
+      {title}
       <div>
         <button>Edit</button>
-        <button>Delete</button>
+        <button onClick={deleteItemHandler}>Delete</button>
       </div>
     </li>
   );
+  return <div>{newMeal}</div>;
 };
 
 export default MealItem;
