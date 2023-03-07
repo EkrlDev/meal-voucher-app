@@ -73,6 +73,24 @@ li {
   width: 700px;
   flex-direction: column;
 }
+.voucher-dark {
+  color: white;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 10%;
+  width: 700px;
+  flex-direction: column;
+  background-color: black;
+}
+
+.voucher-dark button {
+  margin: 1px;
+  background-color: lightgray;
+}
+.voucher-dark select {
+  background-color: lightgray;
+}
 
 .listsContainer {
   margin: 5px;
@@ -88,9 +106,17 @@ li {
   width: 100%;
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
   border-radius: 5%;
   background-color: lightgrey;
+}
+
+.voucher-item-dark {
+  margin: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5%;
+  background-color: dimgray;
 }
 
 .mealItem {
@@ -103,4 +129,13 @@ li {
 
 .select-option {
   width: 150px;
+}
+
+.tempSwitch {
+  display: flex;
+  justify-self: flex-end;
+  align-self: flex-end;
+  width: auto;
+  margin-right: 55px;
+  margin-bottom: 10px;
 }

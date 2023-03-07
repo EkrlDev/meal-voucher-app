@@ -32,6 +32,7 @@ export const voucherReducer = (state, action) => {
           };
         }
       }
+      break;
     }
 
     default: {

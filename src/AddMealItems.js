@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import AddMealItem from "./AddMealItem";
 import "./styles.css";
 import { Menu } from "./MenuList";
+import { tempContext } from "./tempContext";
 
 const AddMealItems = ({ setFromList, selectedMealList, dispatch }) => {
+  const tempCtx = useContext(tempContext);
   const MealItemTitles = Object.keys(Menu);
   const addMealItemList = MealItemTitles.map((meal) => {
     return (
@@ -25,7 +27,7 @@ const AddMealItems = ({ setFromList, selectedMealList, dispatch }) => {
     });
   };
   return (
-    <div className="voucher-item">
+    <div className={tempCtx ? "voucher-item" : "voucher-item-dark"}>
       <h2>Meal Items</h2>
       <ul>{addMealItemList}</ul>
 
