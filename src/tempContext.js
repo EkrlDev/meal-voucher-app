@@ -1,3 +1,3 @@
 import { createContext } from "react";
 
-export const tempContext = createContext(false);
+export const tempContext = createContext(true);

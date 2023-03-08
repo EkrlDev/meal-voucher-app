@@ -27,7 +27,7 @@ const AddMealItems = ({ setFromList, selectedMealList, dispatch }) => {
     });
   };
   return (
-    <div className={tempCtx ? "voucher-item" : "voucher-item-dark"}>
+    <div className={!tempCtx ? "voucher-item" : "voucher-item-dark"}>
       <h2>Meal Items</h2>
       <ul>{addMealItemList}</ul>
 

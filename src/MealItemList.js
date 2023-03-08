@@ -5,7 +5,7 @@ import { tempContext } from "./tempContext";
 const MealItemList = ({ state, dispatch }) => {
   const tempCtx = useContext(tempContext);
   return (
-    <div className={tempCtx ? "voucher-item" : "voucher-item-dark"}>
+    <div className={!tempCtx ? "voucher-item" : "voucher-item-dark"}>
       <h2>Ordered Meal</h2>
       <ul>
         <MealItem dispatch={dispatch} title={state.selectedMeal.Soup} />

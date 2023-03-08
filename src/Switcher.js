@@ -13,7 +13,7 @@ export default function App({ onChange }) {
       <Switcher
         name="my-switcher"
         onChange={onchangeHandler}
-        checked={!tempCtx}
+        checked={tempCtx}
         checkedIcon="Day"
         unCheckedIcon="Night"
         onColor="#0f0f0f"

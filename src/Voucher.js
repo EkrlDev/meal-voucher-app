@@ -26,7 +26,7 @@ const Voucher = ({ dispatch, state, onHandle }) => {
     });
   };
   return (
-    <div className={tempCtx ? "voucher" : "voucher-dark"}>
+    <div className={!tempCtx ? "voucher" : "voucher-dark"}>
       <h1>Meal-Voucher App</h1>
       <div className="tempSwitch">
         <Switcher onChange={onHandle} />
